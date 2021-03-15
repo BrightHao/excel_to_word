@@ -14,16 +14,16 @@ document = Document()
 p = document.add_paragraph()
 
 for i in range(1, sheet.nrows):
-    name = sheet.row_values(i)[2]
-    Class = sheet.row_values(i)[4]
-    teacher = sheet.row_values(i)[1]
+    name = sheet.row_values(i)[4]
+    Class = sheet.row_values(i)[5]
+    teacher = sheet.row_values(i)[7]
     content_head = "2021届毕业设计指导记录本"
     text_head = p.add_run(content_head)
     text_head.font.name = '宋体'
     text_head.font.size = Pt(15)
     text_head.bold = True
     text = p.add_run(f"""
-学  院：湖南工业大学电气学院
+学    院：湖南工业大学电气学院
 学生姓名：{name}
 班级名称：{Class}
 指导老师：{teacher}

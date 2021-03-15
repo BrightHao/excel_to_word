@@ -47,7 +47,7 @@ for i in range(1, sheet.nrows):
 指导老师：{teacher}""")
     text.font.name = "宋体"
     text.font.size = Pt(12)
-document.save('C:\\Users\\Tang Haolun\\Desktop\\2021届电气学院毕业设计选题封面.docx')
+document.save('C:\\Users\\Tang Haolun\\Desktop\\2021届电气学院毕业设计选题封面test.docx')
 #a = p.add_run('bold')
 #a.bold = True
 #a.font.size = "13.5"
